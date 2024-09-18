@@ -1,12 +1,10 @@
 # -*- coding: utf-8 -*-
 
 from modules import ChatGPT_TypeNotation
-
 from API_Keys.Llaves_ChatGPT_Bard_etc import LlaveChatGPT
 
 import asyncio
 import random
-
 import fastapi
 import sse_starlette
 
