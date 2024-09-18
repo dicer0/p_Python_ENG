@@ -1,0 +1,26 @@
+#EL ARCHIVO .gitignore SIRVE PARA INDICAR A GIT CUÁLES SON LOS TIPOS DE DATOS QUE NO QUIERO QUE SE SUBAN, 
+#ASÍ EVITAMOS QUE SE SUBAN DATOS CONFIDENCIALES O SIMPLEMENTE COSAS QUE NO QUEREMOS QUE SE SUBA A CIERTO 
+#REPOSITORIO:
+#Ignorar archivos y carpetas generados por el sistema operativo: Tanto los archivos con extensión .DS_Store 
+#para iOS como Thumbs.db para Windows son específicos del sistema operativo, estos contienen metadatos para 
+#mejorar la experiencia del usuario en el Finder de macOS y en el Explorador de archivos de Windows, 
+#respectivamente. Debido a que pueden causar conflictos al compartir repositorios entre sistemas operativos 
+#diferentes, generalmente se ignoran en los repositorios de control de versiones como Git.
+.DS_Store
+Thumbs.db
+
+#Ignorar archivos de registro o de compilación: 
+# - *.log: Los archivos con la extensión .log. (de registro) son archivos de texto utilizados para 
+#   registrar información sobre el funcionamiento de un programa, como mensajes de error, advertencias o 
+#   eventos. Puede ser útil excluirlos para evitar la inclusión de grandes cantidades de datos de registro 
+#   en el repositorio y mantenerlo más limpio.
+# - *.pyc: Los archivos .pyc son archivos de código de Python precompilado generados por su intérprete. 
+#   Estos archivos contienen el código fuente compilado en bytecode de Python, pero como no son necesarios 
+#   para compartir el código fuente, su exclusión ayuda a mantener el repositorio más limpio y portátil.
+*.log
+*.pyc
+
+#IGNORAR ARCHIVOS Y/O CARPETAS ESPECÍFICAS: Si en el archivo .gitignore se indica un directorio con o 
+#sin un archivo, ese directorio será excluido al subir el proyecto al repositorio de GitHub:
+#   carpeta_secreta/archivo_secreto.txt
+5.-Thomson Reuters/API_Keys/
