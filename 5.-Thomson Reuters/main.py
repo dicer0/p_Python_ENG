@@ -16,7 +16,7 @@
 # - Directorio normal:      carpeta1/carpeta2/carpeta3
 # - Directorio paquetes:    carpeta1.carpeta2.carpeta3
 #La parte del directorio se coloca después de la palabra reservada from y la clase a importar después de import.
-from POO_API_AsistenteVirtual import ChatGPT_TypeNotation
+from modules import ChatGPT_TypeNotation
 
 #IMPORTACIÓN DE LLAVE: Cuando se quiera utilizar una API que utiliza un key, por seguridad es de buenas prácticas 
 #declararla en un archivo externo, además cabe mencionar que el nombre de dicho archivo y constante no pueden empezar 
