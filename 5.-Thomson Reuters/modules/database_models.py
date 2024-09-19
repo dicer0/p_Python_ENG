@@ -4,7 +4,7 @@ import psycopg2
 from psycopg2.extras import RealDictCursor
 
 class DatabaseModels:
-    def __init__(self, dbname, user, password, host='127.0.0.1', port='5432'):
+    def __init__(self, dbname, user, password, host = '127.0.0.1', port = '5432'):
         self.connection = psycopg2.connect(
             dbname=dbname,
             user=user,
@@ -13,7 +13,7 @@ class DatabaseModels:
             port=port
         )
         self.connection.autocommit = True
-        self.cursor = self.connection.cursor(cursor_factory=RealDictCursor)
+        self.cursor = self.connection.cursor(cursor_factory = RealDictCursor)
         self._create_tables()
 
     def _create_tables(self):
