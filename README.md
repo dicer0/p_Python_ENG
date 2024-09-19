@@ -11,7 +11,7 @@ And this specific repository contains documentation about the Python programming
 <br/>
 &nbsp;
 
-## Assignment
+## Thomson Reuters Assignment
 
 In `main.py`, we have provided a shell of a FastAPI app. It includes one route that demonstrates streaming data using Server-Sent Events (SSEs)
 
